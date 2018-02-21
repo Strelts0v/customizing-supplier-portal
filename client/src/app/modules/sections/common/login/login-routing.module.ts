@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginGuard } from '../../../guards/login.guard';
+import { LoginGuard } from '../../../../guards/login.guard';
 import { LoginComponent } from './login.component';
 
 const loginRoutes: Routes = [
@@ -13,6 +13,7 @@ const loginRoutes: Routes = [
   ],
   exports: [RouterModule]
 })
+
 export class LoginRoutingModule {
 
 }

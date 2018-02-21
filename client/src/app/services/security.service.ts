@@ -5,6 +5,19 @@ import { AuthConstants } from '../constant/auth.constant';
 export class SecurityService {
 
   isLoggedIn() {
-    return !!localStorage.getItem(AuthConstants.AUTH_TOKEN_NAME);
+    // return !!localStorage.getItem(AuthConstants.AUTH_TOKEN_NAME);
+    return true;
+  }
+
+  isEbsClient() {
+    return true;
+  }
+
+  isJdeClient() {
+    return false;
+  }
+
+  isPsClient() {
+    return false;
   }
 }

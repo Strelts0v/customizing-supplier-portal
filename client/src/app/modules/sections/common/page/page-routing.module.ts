@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { PageComponent } from './page.component';
 
-import { LoginGuard } from '../../../guards/login.guard';
+import { LoginGuard } from '../../../../guards/login.guard';
 
 const loginRoutes: Routes = [
   {path: '', component: PageComponent, canActivate: [ LoginGuard ]}
@@ -15,6 +15,6 @@ const loginRoutes: Routes = [
   ],
   exports: [ RouterModule ]
 })
-export class PageRoutingModule {
 
+export class PageRoutingModule {
 }

@@ -4,22 +4,22 @@ import { SecurityService } from '../services/security.service';
 import { States } from '../constant/states.constant';
 
 @Injectable()
-export class AuthGuard implements CanActivate, CanLoad {
+export class JdeGuard implements CanActivate, CanLoad {
 
   constructor(private securityService: SecurityService,
               private router: Router) {
   }
 
   canLoad(): boolean {
-    return this.checkLogin();
+    return this.isJdeClient();
   }
 
   canActivate(): boolean {
-    return this.checkLogin();
+    return this.isJdeClient();
   }
 
-  checkLogin(): boolean {
-    if (this.securityService.isLoggedIn()) {
+  isJdeClient(): boolean {
+    if (this.securityService.isJdeClient()) {
       return true;
     }
 

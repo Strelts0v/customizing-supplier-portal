@@ -4,22 +4,22 @@ import { SecurityService } from '../services/security.service';
 import { States } from '../constant/states.constant';
 
 @Injectable()
-export class AuthGuard implements CanActivate, CanLoad {
+export class PsGuard implements CanActivate, CanLoad {
 
   constructor(private securityService: SecurityService,
               private router: Router) {
   }
 
   canLoad(): boolean {
-    return this.checkLogin();
+    return this.isPsClient();
   }
 
   canActivate(): boolean {
-    return this.checkLogin();
+    return this.isPsClient();
   }
 
-  checkLogin(): boolean {
-    if (this.securityService.isLoggedIn()) {
+  isPsClient(): boolean {
+    if (this.securityService.isPsClient()) {
       return true;
     }
 

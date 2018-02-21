@@ -15,4 +15,5 @@ import { PageComponent } from './page.component';
     PageComponent
   ]
 })
+
 export class PageModule { }
