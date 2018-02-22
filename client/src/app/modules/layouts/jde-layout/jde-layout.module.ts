@@ -14,5 +14,5 @@ import { JdeLayoutComponent } from './jde-layout.component';
   ]
 })
 
-export class EbsLayoutModule {
+export class JdeLayoutModule {
 }

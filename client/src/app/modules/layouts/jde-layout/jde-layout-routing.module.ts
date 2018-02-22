@@ -14,7 +14,7 @@ const jdeLayoutRoutes: Routes = [
         loadChildren: '../../sections/jde/jde-page/jde-page.module#JdePageModule',
       },
       {
-        path: States.PAGE,
+        path: States.JDE_PAGE,
         loadChildren: '../../sections/jde/jde-page/jde-page.module#JdePageModule',
       }
     ]

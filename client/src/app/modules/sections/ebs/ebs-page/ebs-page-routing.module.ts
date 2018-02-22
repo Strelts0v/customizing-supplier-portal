@@ -3,11 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { EbsPageComponent } from './ebs-page.component';
 
-import { LoginGuard } from '../../../../guards/login.guard';
 import { EbsGuard } from '../../../../guards/ebs.guard';
+import { AuthGuard } from '../../../../guards/auth.guard';
 
 const ebsPageRoutes: Routes = [
-  {path: '', component: EbsPageComponent, canActivate: [ LoginGuard, EbsGuard ]}
+  {path: '', component: EbsPageComponent, canActivate: [ AuthGuard, EbsGuard ]}
 ];
 
 @NgModule({

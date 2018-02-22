@@ -26,15 +26,11 @@ const routes: Routes = [
     loadChildren: './modules/layouts/ps-layout/ps-layout.module#PsLayoutModule',
     canLoad: [ AuthGuard, PsGuard ]
   },
-  // {
-  //   path: '',
-  //   redirectTo: States.EBS,
-  // }
-  // {
-  //   path: '',
-  //   redirectTo: States.LOGIN,
-  //   pathMatch: 'full'
-  // }
+  {
+    path: '',
+    redirectTo: States.EBS,
+    pathMatch: 'full'
+  }
 ];
 
 

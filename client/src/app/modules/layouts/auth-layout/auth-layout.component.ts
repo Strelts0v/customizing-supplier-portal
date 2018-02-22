@@ -4,5 +4,6 @@ import { Component } from '@angular/core';
   selector: 't-auth-layout',
   templateUrl: './auth-layout.component.html',
 })
+
 export class AuthLayoutComponent {
 }
