@@ -6,11 +6,11 @@ export class SecurityService {
 
   isLoggedIn() {
     // return !!localStorage.getItem(AuthConstants.AUTH_TOKEN_NAME);
-    return true;
+    return false;
   }
 
   isEbsClient() {
-    return true;
+    return false;
   }
 
   isJdeClient() {
