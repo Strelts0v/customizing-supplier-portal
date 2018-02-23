@@ -10,7 +10,7 @@ export class SecurityService {
   }
 
   isEbsClient() {
-    return false;
+    return true;
   }
 
   isJdeClient() {
@@ -18,6 +18,6 @@ export class SecurityService {
   }
 
   isPsClient() {
-    return true;
+    return false;
   }
 }

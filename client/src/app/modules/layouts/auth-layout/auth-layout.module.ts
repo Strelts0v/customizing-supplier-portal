@@ -13,5 +13,6 @@ import { AuthLayoutComponent } from './auth-layout.component';
     AuthLayoutComponent
   ]
 })
+
 export class AuthLayoutModule {
 }
