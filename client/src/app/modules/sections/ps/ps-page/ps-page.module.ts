@@ -16,5 +16,5 @@ import { PsPageComponent } from './ps-page.component';
   ]
 })
 
-export class JdePageModule {    
+export class PsPageModule {    
 }

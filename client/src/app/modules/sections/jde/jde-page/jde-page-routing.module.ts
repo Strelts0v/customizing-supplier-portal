@@ -3,11 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { JdePageComponent } from './jde-page.component';
 
-import { LoginGuard } from '../../../../guards/login.guard';
 import { JdeGuard } from '../../../../guards/jde.guard';
+import { AuthGuard } from '../../../../guards/auth.guard';
 
 const jdePageRoutes: Routes = [
-  {path: '', component: JdePageComponent, canActivate: [ LoginGuard, JdeGuard ]}
+  {path: '', component: JdePageComponent, canActivate: [ AuthGuard, JdeGuard ]}
 ];
 
 @NgModule({

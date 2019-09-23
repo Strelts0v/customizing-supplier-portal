@@ -14,7 +14,7 @@ const psLayoutRoutes: Routes = [
         loadChildren: '../../sections/ps/ps-page/ps-page.module#PsPageModule',
       },
       {
-        path: States.PAGE,
+        path: States.PS_PAGE,
         loadChildren: '../../sections/ps/ps-page/ps-page.module#PsPageModule',
       }
     ]

@@ -14,7 +14,7 @@ const ebsLayoutRoutes: Routes = [
         loadChildren: '../../sections/ebs/ebs-page/ebs-page.module#EbsPageModule',
       },
       {
-        path: States.PAGE,
+        path: States.EBS_PAGE,
         loadChildren: '../../sections/ebs/ebs-page/ebs-page.module#EbsPageModule',
       }
     ]

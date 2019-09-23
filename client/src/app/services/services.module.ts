@@ -12,5 +12,6 @@ import { SecurityService } from './security.service';
     SecurityService
   ]
 })
+
 export class ServicesModule {
 }
